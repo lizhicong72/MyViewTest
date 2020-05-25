@@ -1,0 +1,2 @@
+include ':app', ':viewtest', ':myprogress', ':canvastest', ':photocut', ':mysurfaceview'
+rootProject.name='MyView'

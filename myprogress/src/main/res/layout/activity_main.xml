@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    android:id="@+id/parent">
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/start"
+       android:text="start"
+       android:onClick="click"/>
+    <!--
+    <com.example.myprogress.MyProgress
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/myProgress"
+        my:max="200"
+        my:outcirclewidth="40"
+        my:incirclecolor="#ff3333ff"
+        my:fontsize="30sp"
+        />
+        -->
+   <com.example.myprogress.TextAnimaterView
+       android:layout_width="match_parent"
+       android:layout_below="@id/start"
+       android:layout_height="300dp"/>
+</RelativeLayout>

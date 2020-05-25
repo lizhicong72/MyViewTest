@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c0c0ff"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/x"
+        android:hint="x"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/y"
+        android:hint="y"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/angle"
+        android:hint="angle"
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="start"
+    android:onClick="click"
+    android:id="@+id/start"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:id="@+id/image"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        />
+    <com.example.viewtest.MyView1
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/myView1"/>
+    <com.example.viewtest.MyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/myView"/>
+</LinearLayout>

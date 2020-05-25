@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/p"
+    android:background="#c0c000"
+    tools:context=".MainActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:id="@+id/start"
+        android:onClick="click"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/start"
+        android:text="stop"
+        android:id="@+id/stop"
+        android:onClick="click"/>
+    <com.example.myview.PathView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/pathView"
+
+        android:layout_below="@+id/start"
+        android:layout_centerHorizontal="true"
+        />
+
+<com.example.myview.PathAnimation
+    android:id="@+id/path"
+    android:layout_width="200dp"
+    android:layout_height="300dp"
+    android:background="#fcfcfc"
+
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    />
+
+
+</RelativeLayout>
